@@ -17,10 +17,10 @@
                 Clothing
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Activewear &amp; Essentials</a>
-                <a href="" class="dropdown-item">Jeans</a>
-                <a href="" class="dropdown-item">Shirts</a>
-                <a href="" class="dropdown-item">All Clothing</a>
+                <a href="{% url 'products' %}?category=equipment_and_accessories" class="dropdown-item">Equipment & Accessories</a>
+                <a href="{% url 'products' %}?category=casual_wear" class="dropdown-item">Casual Wear</a>
+                <a href="{% url 'products' %}?category=fight_wear" class="dropdown-item">Fight Wear</a>
+                <a href="{% url 'products' %}?category=fight_wear,casual_wear,equipment_and_accessories" class="dropdown-item">All Clothing</a>
             </div>
         </li>
 
