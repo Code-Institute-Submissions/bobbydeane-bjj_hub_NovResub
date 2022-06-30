@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 # Category Model.
 
@@ -26,3 +27,15 @@ class Product(models.Model):
     def __str__(self):
         return self.name
 
+class Review(models.Model):
+    # Delete comments if product is deleted
+    product = models.ForeignKey(
+        Product, on_delete=models.CASCADE, related_name="reviews"
+        )
+    name = models.CharField(max_length=80)
+    body = models.TextField()
+    created_on = models.DateTimeField(
+        auto_now_add=True)
+
+    def __str__(self):
+        return '%s - %s' % (self.product.name, self.name)
