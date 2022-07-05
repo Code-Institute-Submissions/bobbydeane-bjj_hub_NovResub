@@ -79,3 +79,13 @@ class SubmitReview(CreateView):
     #form_class = ReviewForm
     template_name = "products/add_review.html"
     fields = '__all__'
+
+
+class UpdateReview(UpdateView):
+    model = Review
+    template_name = 'edit_review.html'
+    fields = ['body']
+
+class DeleteReview(DeleteView):
+    model = Review
+    template_name = 'delete_review.html'
