@@ -33,7 +33,8 @@ class Review(models.Model):
     product = models.ForeignKey(
         Product, on_delete=models.CASCADE, related_name="reviews"
         )
-    name = models.CharField(max_length=80)
+    name = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="user_post")
     body = models.TextField()
     created_on = models.DateTimeField(
         auto_now_add=True)
