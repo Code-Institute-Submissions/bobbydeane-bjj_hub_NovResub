@@ -3,8 +3,11 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 from django.views.generic import CreateView, UpdateView, DeleteView
+from django.urls import reverse_lazy
+
 
 from .models import Product, Category, Review
+from .forms import ReviewForm
 
 # Create your views here.
 
@@ -73,6 +76,6 @@ def product_detail(request, product_id):
 
 class SubmitReview(CreateView):
     model = Review
-    # form_class = SubmitPostForm
+    #form_class = ReviewForm
     template_name = "products/add_review.html"
     fields = '__all__'
