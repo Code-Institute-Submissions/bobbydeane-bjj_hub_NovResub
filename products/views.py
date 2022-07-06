@@ -76,16 +76,22 @@ def product_detail(request, product_id):
 
 class SubmitReview(CreateView):
     model = Review
-    #form_class = ReviewForm
+    form_class = ReviewForm
     template_name = "products/add_review.html"
-    fields = '__all__'
+    #fields = '__all__'
+    def form_valid(self, form):
+        #form.instance.product_id = self.kwargs['pk']
+        form.instance.product = Product.objects.get(id=self.kwargs['product_id'])
+
+        return render('products')
+
 
 
 class UpdateReview(UpdateView):
     model = Review
-    template_name = 'edit_review.html'
+    template_name = 'products/edit_review.html'
     fields = ['body']
 
 class DeleteReview(DeleteView):
     model = Review
-    template_name = 'delete_review.html'
+    template_name = 'products/delete_review.html'

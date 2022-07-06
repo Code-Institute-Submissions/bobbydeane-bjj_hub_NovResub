@@ -116,7 +116,7 @@
                     {% for review in product.reviews.all %}
                         <strong>
                             {{ review.name }} -
-                            {{ review.created_on }} - {% if request.user == review.name %} <a href="{% url 'delete_review' product.pk %}">Edit</a> {% endif %}
+                            {{ review.created_on }}
                         </strong>
                         <br>
                         {{ review.body }}

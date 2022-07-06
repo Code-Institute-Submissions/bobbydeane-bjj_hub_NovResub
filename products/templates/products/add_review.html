@@ -23,8 +23,15 @@
                 </div>
 
                 <script>
-                    var product = "{{ product.name }}";
-                    document.getElementById("deane").placeholder = product;
+                    var name = "{{ user.id }}";
+                    
+                    document.getElementById("deane").value 
+                        = name;
+                    
+                    var product = "{{ Product.id }}";
+
+                    document.getElementById("prod").placeholder 
+                        = product;
                 </script>
 
                 {% else %}
