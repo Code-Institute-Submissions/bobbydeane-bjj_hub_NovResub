@@ -37,11 +37,7 @@
                         </a>
                     </p>
                     {% endif %}
-                    {% if product.rating %}
-                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
-                    {% else %}
-                        <small class="text-muted">No Rating</small>
-                    {% endif %}
+
                     <p class="mt-3">{{ product.description }}</p>
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                         {% csrf_token %}
@@ -106,24 +102,22 @@
         </div>
         <div class="row">
             <div class="col-md-8 card mb-4  mt-3 ">
-                <h3>Comments:</h3>
+                <h3>Product reviews:</h3>
 
                 {% if not product.reviews.all %}
                     This Product does not have any reviews yet...<a href="{% url 'add_review' product.pk %}">Add your review here.</a>
                 {% else %}
-                <a href="{% url 'add_review' product.pk %}">Add a Review for this product.</a>
+                <a href="{% url 'add_review' product.pk %}">Like this Product? Leave a Comment or Review.</a>
                 <br><br>
-                    {% for review in product.reviews.all %}
-                        <strong>
-                            {{ review.name }} -
-                            {{ review.created_on }}
-                        </strong>
-                        <br>
-                        {{ review.body }}
 
-                        <hr>
+                <hr>
+                {% for review in product.reviews.all %}
+                {{ review.body }}
+                
+                    <small> <strong>{{ review.name }}</strong> - {{ review.created_on }} </small>
+                    <br>
+                <hr>
                         
-
                     {% endfor %}
 
                 {% endif %}
