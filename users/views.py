@@ -1,7 +1,8 @@
 from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
+from django.views.generic import ListView, DetailView
 
-from .models import UserProfile
+from .models import UserProfile, Feedback
 from .forms import UserProfileForm
 
 from checkout.models import Order
@@ -45,3 +46,8 @@ def order_history(request, order_number):
     }
 
     return render(request, template, context)
+
+
+class FeedbackView(ListView):
+    model = Feedback
+    template_name = 'users/user_feedback.html'

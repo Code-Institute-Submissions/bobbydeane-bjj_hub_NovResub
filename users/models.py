@@ -31,3 +31,12 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
         UserProfile.objects.create(user=instance)
     # Existing users: just save the profile
     instance.userprofile.save()
+
+
+class Feedback(models.Model):
+    title = models.CharField(max_length=100)
+    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="user_feedback")
+    feedback = models.TextField()
+    
+    def __str__(self):
+        return self.title + ' | ' + str(self.author)
