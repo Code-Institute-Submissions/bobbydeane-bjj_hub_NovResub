@@ -165,7 +165,7 @@ def delete_product(request, product_id):
 def edit_review(request, review_id):
     """ Edit a product in the store """
 
-    product = get_object_or_404(Review(), pk=review_id)
+    review = get_object_or_404(Review, pk=review_id)
     if request.method == 'POST':
         form = ReviewForm(request.POST, request.FILES, instance=review)
         if form.is_valid():
