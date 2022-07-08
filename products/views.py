@@ -7,7 +7,7 @@ from django.urls import reverse_lazy
 
 
 from .models import Product, Category, Review
-from .forms import ReviewForm
+from .forms import ReviewForm, ProductAdminForm
 
 # Create your views here.
 
@@ -97,3 +97,14 @@ class UpdateReview(UpdateView):
 class DeleteReview(DeleteView):
     model = Review
     template_name = 'products/delete_review.html'
+
+
+def add_product_admin(request):
+    """ Add a product to the store via front end form """
+    form = ProductAdminForm()
+    template = 'products/add_product.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
