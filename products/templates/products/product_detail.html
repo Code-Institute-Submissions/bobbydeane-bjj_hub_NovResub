@@ -117,14 +117,19 @@
                 <br><br>
 
                 <hr>
-                {% for review in product.reviews.all %}
-                {{ review.body }}
+                    {% for review in product.reviews.all %}
+                    {{ review.body }}
                 
-                    <small> <strong>{{ review.name }}</strong> - {{ review.created_on }} </small>
-                    <br>
-                <hr>
+                    <small> <strong>{{ review.name }}</strong> - {{ review.created_on }} 
+                    
+                        {% if request.user == review.name %}
+                        <a href="{% url 'edit_review' review.pk %}">Edit.</a>
+                        </small>
+                        <br>
                         
-                    {% endfor %}
+                <hr>
+                        {% endif %}
+                    {% endfor %} 
 
                 {% endif %}
                     <div class="card-body">

@@ -160,3 +160,28 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+def edit_review(request, review_id):
+    """ Edit a product in the store """
+
+    product = get_object_or_404(Review(), pk=review_id)
+    if request.method == 'POST':
+        form = ReviewForm(request.POST, request.FILES, instance=review)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated Review')
+            return redirect(reverse('products'))
+        else:
+            messages.error(request, 'Failed to update Review. Please ensure the form is valid.')
+    else:
+        form = ReviewForm(instance=review)
+        messages.info(request, f'You are editing {review.name} review')
+
+    template = 'products/edit_review.html'
+    context = {
+        'form': form,
+        'review': review,
+    }
+
+    return render(request, template, context)
