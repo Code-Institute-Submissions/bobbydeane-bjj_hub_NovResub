@@ -1,9 +1,9 @@
 from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, CreateView
 
 from .models import UserProfile, Feedback
-from .forms import UserProfileForm
+from .forms import UserProfileForm, FeedbackForm
 
 from checkout.models import Order
 
@@ -51,3 +51,9 @@ def order_history(request, order_number):
 class FeedbackView(ListView):
     model = Feedback
     template_name = 'users/user_feedback.html'
+
+
+class SubmitFeedback(CreateView):
+    model = Feedback
+    form_class = FeedbackForm
+    template_name = "users/add_feedback.html"

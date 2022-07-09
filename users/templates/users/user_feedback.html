@@ -25,9 +25,13 @@
             <div class="col-12 col-md-6">
                 <ul>
                 {% for feedback in object_list %}
-                   <li>{{ feedback.title }} - {{ feedback.author }} <br>
-                    {{ feedback.feedback }}</li>
+                <br>
+                <hr>
+                   <li><strong>{{ feedback.title }}</strong> - {{ feedback.author }} <br>
+                    Feedback: {{ feedback.feedback }}</li>
 
+                <hr>
+                <br>
                 {% endfor %}
                 </ul>
     

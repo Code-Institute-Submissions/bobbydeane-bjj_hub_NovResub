@@ -13,17 +13,26 @@
         <div class="row">
             <div class="col-md-8 card mb-4  mt-3 ">
                 {% if user.is_authenticated %}
-                <h3>Edit you Review.</h3>
+                <h3>We'd love to hear from you on how we can improve our store. Please leave some feedback.</h3>
                 <div class="form-group">
                     <form method="POST">
                         {% csrf_token %}
                         {{ form.as_p }}
-                        <button class="btn btn-black rounded-0" type="submit">Update Review</button>
+                        <button class="btn btn_secondary">Add Review</button>
                     </form>
                 </div>
 
+                <script>
+                    var author = "{{ user.id }}";
+                    
+                    document.getElementById("deane_feedback").value 
+                        = author;
+                    
+                </script>
+
                 {% else %}
-                please <a href="#"></a>sign in</a> to leave a review.
+                <h1>Please <a href="{% url 'account_signup' %}" >Create an Account</a> or <a href="{% url 'account_login' %}">Log in</a> to leave Feedback.</h1>
+                
                 {% endif %}
             </div>
         </div>

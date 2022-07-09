@@ -78,25 +78,12 @@ class SubmitReview(CreateView):
     model = Review
     form_class = ReviewForm
     template_name = "products/add_review.html"
-    # fields = '__all__'
     def form_valid(self, form):
         product = Product.objects.get(pk=self.kwargs['product_id'])
         form.instance.product = product
-        #form.instance.product = self.kwargs['product_id']
-        #form.instance.product = Product.objects.get(id=self.kwargs['product_id'])
         form.save()
         return redirect(reverse('product_detail', args=[product.id]))
 
-
-
-class UpdateReview(UpdateView):
-    model = Review
-    template_name = 'products/edit_review.html'
-    fields = ['body']
-
-class DeleteReview(DeleteView):
-    model = Review
-    template_name = 'products/delete_review.html'
 
 @login_required
 def add_product_admin(request):
@@ -185,3 +172,13 @@ def edit_review(request, review_id):
     }
 
     return render(request, template, context)
+
+
+def delete_review(request, review_id):
+    """ Delete a review from a product """
+    review = get_object_or_404(Review, pk=review_id)
+    review.delete()
+    messages.success(request, 'Review deleted!')
+    return redirect(reverse('products'))
+
+

@@ -113,6 +113,7 @@
                 {% if not product.reviews.all %}
                     This Product does not have any reviews yet...<a href="{% url 'add_review' product.pk %}">Add your review here.</a>
                 {% else %}
+
                 <a href="{% url 'add_review' product.pk %}">Like this Product? Leave a Comment or Review.</a>
                 <br><br>
 
@@ -120,15 +121,15 @@
                     {% for review in product.reviews.all %}
                     {{ review.body }}
                 
-                    <small> <strong>{{ review.name }}</strong> - {{ review.created_on }} 
+                    <strong>{{ review.name }} - {{ review.created_on }} </strong>
                     
-                        {% if request.user == review.name %}
-                        <a href="{% url 'edit_review' review.pk %}">Edit.</a>
-                        </small>
-                        <br>
+                    {% if request.user == review.name %}
+                    <small><a href="{% url 'edit_review' review.pk %}">Edit.</a> - <a href="{% url 'delete_review' review.pk %}">Delete.</a>
+                    </small>
+                    {% endif %}
+                    <br>
                         
                 <hr>
-                        {% endif %}
                     {% endfor %} 
 
                 {% endif %}
