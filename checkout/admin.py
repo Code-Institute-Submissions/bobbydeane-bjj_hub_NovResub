@@ -7,6 +7,8 @@ class OrderLineItemAdminInline(admin.TabularInline):
     readonly_fields = ('lineitem_total',)
 
 # Order Model admin
+
+
 class OrderAdmin(admin.ModelAdmin):
     inlines = (OrderLineItemAdminInline,)
 
@@ -27,5 +29,6 @@ class OrderAdmin(admin.ModelAdmin):
                     'grand_total',)
 
     ordering = ('-date',)
+
 
 admin.site.register(Order, OrderAdmin)

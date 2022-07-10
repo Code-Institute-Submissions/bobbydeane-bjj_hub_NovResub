@@ -2,40 +2,40 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
-{% endblock %}
+   <div class = "container header-container" >
+       <div class = "row" >
+            <div class = "col" > </div >
+        </div >
+    </div >
+{%endblock %}
 
-{% block content %}
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <hr>
-                <h2 class="logo-font mb-4">User Feedback</h2>
-                <h5 class="text-muted">Read what your customers think of the site:</h5>
-                <hr>
-            </div>
-        </div>
+{%block content %}
+    <div class = "overlay" > </div>
+    <div class = "container" >
+       <div class = "row" >
+           <div class = "col-12 col-md-6" >
+             <hr >
+                <h2 class = "logo-font mb-4" > User Feedback</h2>
+                <h5 class = "text-muted" > Read what your customers think of the site:</h5>
+                <hr >
+            </div >
+        </div >
 
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <ul>
-                {% for feedback in object_list %}
-                <br>
-                <hr>
-                   <li><strong>{{ feedback.title }}</strong> - {{ feedback.author }} <br>
-                    Feedback: {{ feedback.feedback }}</li>
+        <div class = "row" >
+           <div class = "col-12 col-md-6" >
+             <ul >
+                {%for feedback in object_list %}
+                <br >
+                <hr >
+                    <li > <strong > {{ feedback.title }}</strong> - {{ feedback.author }} <br>
+                        Feedbck: {{feedback.feedback }} </li >
 
-                <hr>
-                <br>
-                {% endfor %}
-                </ul>
-    
-            </div>            
-        </div>
-    </div>
-{% endblock %}
+                <hr >
+                <br >
+                {%endfor %}
+                </ul >
+
+            </div >
+        </div >
+    </div >
+{%endblock %}

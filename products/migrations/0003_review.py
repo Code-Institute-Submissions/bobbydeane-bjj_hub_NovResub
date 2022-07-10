@@ -12,13 +12,9 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Review',
-            fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=80)),
-                ('body', models.TextField()),
-                ('created_on', models.DateTimeField(auto_now_add=True)),
-                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='reviews', to='products.product')),
-            ],
-        ),
-    ]
+            name='Review', fields=[
+                ('id', models.BigAutoField(
+                    auto_created=True, primary_key=True, serialize=False, verbose_name='ID')), ('name', models.CharField(
+                        max_length=80)), ('body', models.TextField()), ('created_on', models.DateTimeField(
+                            auto_now_add=True)), ('product', models.ForeignKey(
+                                on_delete=django.db.models.deletion.CASCADE, related_name='reviews', to='products.product')), ], ), ]

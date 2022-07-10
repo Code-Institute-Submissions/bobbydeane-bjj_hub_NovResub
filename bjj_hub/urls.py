@@ -30,4 +30,5 @@ urlpatterns = [
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # Custom 404 handler
+
 handler404 = 'bjj_hub.views.handler404'

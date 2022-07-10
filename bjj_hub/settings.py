@@ -75,7 +75,8 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # required by allauth
+                # required by allauth
+                'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
@@ -124,9 +125,10 @@ DATABASES = {
     }
 }
 
-#DATABASES = {
-#    'default': dj_database_url.parse('postgres://frhvqpjjoztmwe:fde26e82b6be167b1aee31f595374f137f5fe3b9d0b500f65dd483c2b929a1ac@ec2-99-80-170-190.eu-west-1.compute.amazonaws.com:5432/dgc2hn0a5p5r1')
-#}
+# DATABASES = {
+#    'default': dj_database_url.parse(
+# 'postgres://frhvqpjjoztmwe:fde26e82b6be167b1aee31f595374f137f5fe3b9d0b500f65dd483c2b929a1ac@ec2-99-80-170-190.eu-west-1.compute.amazonaws.com:5432/dgc2hn0a5p5r1')
+# }
 
 
 # Password validation
@@ -134,16 +136,20 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME':
+        'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
 

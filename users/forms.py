@@ -20,7 +20,6 @@ class UserProfileForm(forms.ModelForm):
 
         }
 
-
         for field in self.fields:
             if field != 'default_country':
                 if self.fields[field].required:
@@ -38,7 +37,16 @@ class FeedbackForm(forms.ModelForm):
         fields = ('title', 'author', 'feedback')
 
         widgets = {
-            'title': forms.TextInput(attrs={'class': 'form-control'}),
-            'author': forms.TextInput(attrs={'class': 'form-control', 'value':'', 'id': 'deane_feedback', 'type':'hidden'}),
-            'feedback': forms.TextInput(attrs={'class': 'form-control'}),
+            'title': forms.TextInput(
+                attrs={
+                    'class': 'form-control'}),
+            'author': forms.TextInput(
+                attrs={
+                    'class': 'form-control',
+                    'value': '',
+                    'id': 'deane_feedback',
+                    'type': 'hidden'}),
+            'feedback': forms.TextInput(
+                attrs={
+                    'class': 'form-control'}),
         }
