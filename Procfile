@@ -1,0 +1,1 @@
+web: gunicorn bjj_hub.wsgi:application
