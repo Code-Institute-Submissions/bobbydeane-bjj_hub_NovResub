@@ -48,4 +48,4 @@ class Feedback(models.Model):
         return self.title + ' | ' + str(self.author)
 
     def get_absolute_url(self):
-        return reverse('feedback_thanks')
+        return reverse('products')
