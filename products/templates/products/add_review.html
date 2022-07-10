@@ -8,7 +8,7 @@
         </div>
     </div>
 {% endblock %}
-
+<!-- Leave a reivew form-->
 {% block content %}
         <div class="row">
             <div class="col-md-8 card mb-4  mt-3 ">
@@ -21,7 +21,7 @@
                         <button class="btn btn_secondary">Add Review</button>
                     </form>
                 </div>
-
+                <!-- JS to populate and hide the the auhtor name and hide product -->
                 <script>
                     var name = "{{ user.id }}";
                     
@@ -58,12 +58,11 @@
              </div>
              <div class="col-12 col-md-6">
                <p>Subscribe to our mailing list.</p>
-               <!-- Begin Mailchimp Signup Form -->
+               <!-- Mailchimp Signup Form -->
                 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
                 <style type="text/css">
                     #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}
-                /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-                We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+
                 </style>
                 <div id="mc_embed_signup">
                     <form action="https://gmail.us8.list-manage.com/subscribe/post?u=8e27e38c298025677c1c11322&amp;id=98d4fb1d19" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>

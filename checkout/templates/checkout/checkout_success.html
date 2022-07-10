@@ -13,6 +13,8 @@
     </div>
 {% endblock %}
 
+<!--Checkout success functionality from Boutique ado-->
+
 {% block content %}
     <div class="overlay"></div>
     <div class="container">
@@ -21,10 +23,10 @@
                 <hr>
                 <h2 class="logo-font mb-4">Thank You</h2>
                 <hr>
-                <p class="text-black">Your order information is below. A confirmation email will be sent to <strong>{{ order.email }}</strong>.</p>
+                <p class="text-black">A confirmation email will be sent to <strong>{{ order.email }}</strong>.Order information:</p>
             </div>
         </div>
-
+        <!-- Display order info from order model -->
         <div class="row">
             <div class="col-12 col-lg-7">
                 <div class="order-confirmation-wrapper p-2 border">
@@ -228,12 +230,11 @@
              </div>
              <div class="col-12 col-md-6">
                <p>Subscribe to our mailing list.</p>
-               <!-- Begin Mailchimp Signup Form -->
+               <!-- Mailchimp Signup Form -->
                 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
                 <style type="text/css">
                     #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}
-                /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-                We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+
                 </style>
                 <div id="mc_embed_signup">
                     <form action="https://gmail.us8.list-manage.com/subscribe/post?u=8e27e38c298025677c1c11322&amp;id=98d4fb1d19" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>

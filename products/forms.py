@@ -9,11 +9,10 @@ class ReviewForm(forms.ModelForm):
 
         widgets = {
             'name': forms.TextInput(attrs={'class': 'form-control', 'value':'', 'id': 'deane', 'type':'hidden'}),
-            'body': forms.TextInput(attrs={'class': 'form-control'}),
-            #'product': forms.TextInput(attrs={'class': 'form-control', 'placeholder':' product name', 'id': 'prod'}),
+            'body': forms.TextInput(attrs={'class': 'form-control'}), 
         }
 
-
+    # Edit products form
 class ProductAdminForm(forms.ModelForm):
 
     class Meta:

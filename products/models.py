@@ -27,6 +27,7 @@ class Product(models.Model):
     def __str__(self):
         return self.name
 
+    # User review models
 class Review(models.Model):
     # Delete comments if product is deleted
     product = models.ForeignKey(

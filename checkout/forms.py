@@ -1,7 +1,7 @@
 from django import forms
 from .models import Order
 
-
+# Order form - Adds placeholders to the order. 
 class OrderForm(forms.ModelForm):
     class Meta:
         model = Order

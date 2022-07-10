@@ -148,10 +148,9 @@ def delete_product(request, product_id):
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
 
-
+# Edit user review
 def edit_review(request, review_id):
     """ Edit a product in the store """
-
     review = get_object_or_404(Review, pk=review_id)
     if request.method == 'POST':
         form = ReviewForm(request.POST, request.FILES, instance=review)
@@ -173,7 +172,7 @@ def edit_review(request, review_id):
 
     return render(request, template, context)
 
-
+# Delete reviews
 def delete_review(request, review_id):
     """ Delete a review from a product """
     review = get_object_or_404(Review, pk=review_id)

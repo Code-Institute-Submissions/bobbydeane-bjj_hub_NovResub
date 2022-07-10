@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import Product, Category, Review
 
-# Register your models here.
+# Product and category Admin.
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = (

@@ -10,6 +10,7 @@ def view_bag(request):
 
     return render(request, 'bag/bag.html')
 
+# Add to bag view - Boutique ADO
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
 
@@ -42,7 +43,7 @@ def add_to_bag(request, item_id):
     request.session['bag'] = bag
     return redirect(redirect_url)
     
-
+# ADJUST BAG - Boutique ado code - allows user to edit bag contents
 def adjust_bag(request, item_id):
     """Adjust the quantity of the specified product to the specified amount"""
 
@@ -68,7 +69,7 @@ def adjust_bag(request, item_id):
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
 
-
+#DElete Bag items
 def remove_from_bag(request, item_id):
     """Remove the item from the shopping bag"""
 
