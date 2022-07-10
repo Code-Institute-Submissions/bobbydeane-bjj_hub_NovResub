@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/bag/</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/accounts/login/</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/?category=casual_wear</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/?category=fight_wear</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/?category=fight_wear,casual_wear</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/?category=equipment_and_accessories</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/product/18</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/product/16</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/product/17</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/product/11</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/product/1</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/product/2</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/product/3</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/product/5</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/product/4</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/product/14</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/product/13</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/product/10</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/product/9</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/product/7</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/product/6</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/product/15</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/review/18/</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/review/16/</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/review/17/</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/review/11/</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/review/1/</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/review/2/</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/review/3/</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/review/5/</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/review/4/</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/review/14/</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/review/13/</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/review/10/</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/review/9/</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/review/7/</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/review/6/</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://bjj-hub-project.herokuapp.com/products/review/15/</loc>
+  <lastmod>2022-07-10T22:31:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
