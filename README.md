@@ -16,15 +16,15 @@ The site is also to MMA fans and BJJ newcomers who need the right gear when star
 
 The user can keep up with deals and sales by signing up to the site mailing list and by following the [Facebook page](https://www.facebook.com/BJJ-Hub-107733918670528). The facebook will also post BJJ news, videos and competition info.
 
-![Site Preview](https://bjjhubproject.s3.amazonaws.com/media/BJJ_hub_facebook.jpg.jpg)
+![Site Preview](https://bjjhubproject.s3.amazonaws.com/media/BJJ_hub_facebook.jpg)
 
 # Search Engine Optimisation
 
 Generated sitemap.xml and robots.txt files to improve the quality and quantity of website traffic. I have come up with a selection of keywords which would be important to the customers and added them in the meta.
 
-![Keywords](https://bjjhubproject.s3.amazonaws.com/media/SEO1_google_search.jpg)
+![Keywords](https://bjjhubproject.s3.amazonaws.com/media/SEO1+google+search.jpg)
 
-![SEO](https://bjjhubproject.s3.amazonaws.com/media/SEO1_google_search1.jpg)
+![SEO](https://bjjhubproject.s3.amazonaws.com/media/SEO1+google+search1.jpg)
 
 
 
