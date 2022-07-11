@@ -1,108 +1,216 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# BJJ Hub
 
-Welcome bobbydeane,
+BJJ Hub is a e-commerce store that supplies Brazilian Jiu Jitsu apparel and goods. The site is built using the Django Framework in python and is heavily beased on Code Institute Boutique Ado project.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Site Preview](https://bjjhubproject.s3.amazonaws.com/media/homepage.jpg)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
-## Gitpod Reminders
+Live app link can be found [here](https://bjj-hub-project.herokuapp.com/)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+# Target Audience
 
-`python3 -m http.server`
+This site is targeted to the Brazilian Jiu Jitsu community. People who want to wear well known, stylish and durable gear when training and competing in BJJ and Grappling.
+The site is also to MMA fans and BJJ newcomers who need the right gear when starting out in their BJJ journey.
 
-A blue button should appear to click: _Make Public_,
+# Marketing
 
-Another blue button should appear to click: _Open Browser_.
+The user can keep up with deals and sales by signing up to the site mailing list and by following the [Facebook page](https://www.facebook.com/BJJ-Hub-107733918670528). The facebook will also post BJJ news, videos and competition info.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+![Site Preview](https://bjjhubproject.s3.amazonaws.com/media/BJJ_hub_facebook.jpg.jpg)
 
-A blue button should appear to click: _Make Public_,
+# Search Engine Optimisation
 
-Another blue button should appear to click: _Open Browser_.
+Generated sitemap.xml and robots.txt files to improve the quality and quantity of website traffic. I have come up with a selection of keywords which would be important to the customers and added them in the meta.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+![Keywords](https://bjjhubproject.s3.amazonaws.com/media/SEO1_google_search.jpg)
 
-To log into the Heroku toolbelt CLI:
+![SEO](https://bjjhubproject.s3.amazonaws.com/media/SEO1_google_search1.jpg)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-------
+# User Experience
 
-## Release History
+***
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## User Stories
+1 User
+### 1.1 As a User I can View product details so that identify price, description and image
+### 1.2 As a user I can Easily view the total of my purchases at any time so that keep track of spending
+### 1.3 As a User I can register for an account so that view my profile details and edit my acc
+### 1.4 As a User I can easily log in and out so that access my account info
+### 1.5 As a user I can recover my password so that recover access to my account
+### 1.6 As a user I can receive an email confirmation after registering so that verify my acc…
+   
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+2 Shopper
+### 2.1 As a shopper I can sort the lsit of available products so that easily id the best rated product
+### 2.2 As a shopper I can sort a specific category of products so that find the best priced products
+### 2.3 As a shopper I can sort multiple categories of products simultaneously so that find th best suited product across categories such as "fight wear
+### 2.4 As a shopper I can sort multiple categories of products simultaneously ** so that find th best suited product across categories such as "fight wear"
+### 2.5 As a shopper I can easily see what ive search for and the number of results so that I can decide what product is available
+### 2.6 As a Shopper I can Easily select a size and quantity of product so that Ensuring I don't select the wrong size product
+### 2.7 As a shopper I can view items inmy bag to be purchased so that identify the cost of my purchase and all the items i will receive
+### 2.8 As a Shopper* I can Adjust the quantity of individual items in my bag so that make changes to my bag
+### 2.9 As a shopper* I can Easily enter my payment information so that I can check out quickly
+### 2.10 As a shopper I can feel my shopping details are secure so that be confident in providing my info
+### 2.11 As a Shopper I can view an order confirmation after checkout so that verify i haven't made any mistakes
+### 2.12 As a Shopper I can Receive email confirmation after checking out so that I can keep the confirmation of what ive purchased.
+### 2.13 As a shopper I can edit and delete my reviews so that update my review or remove it
+### 2.14 As a shopper I can leave site feedback so that received benefit
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+ 3 Storeowner
+### 3.1 As a Store owner I can Add a product so that Add new items to my store
+### 3.2 As a store owner I can edit a product so that change product prices, descriptions etc
+### 3.3 As a store owner I can Delete a product so that remove items that are no longer for sale
+### 3.4 As a Store owner I can read user feedback so that make positive changes to the site
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+## 1. Strategy
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+ - ### Project Goal
+ Create a site that allows users to get support and motivation to quit Caffeine through the site community and Blog Posts.
+ Creat a site that allows users to browse and shop for BJJ apparel.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## 2. Scope
+- Simple, functional E-commerce site
+- explicit content
+- Site is easily Navigated
+- Appealing on Mobile devices.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+# Functional Scope
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+***
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### BJJ Hub Diagram Entity Relationship
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+![DER](https://bjjhubproject.s3.amazonaws.com/media/flowchart1.jpg)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Agile Methodology
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+All development and functioanlity of this project were managed using [Github](https://github.com/bobbydeane/bjj_hub/issues/26).
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## 3. Structure
 
-------
+- The site has a simple layout to ensure intuitive navigation.
+- Forms are straightfoward an easy to understand
+- Edit, update and delete forms are easy to use
+- The bag has recognisable UX friendly functionality and layout (Bag taken from boutique ado project)
+- The site uses all auth django user sign ups, log in, log outs to deliver tried and tested UX formats and design.
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+## 4. Surface
 
-**How will this affect me?**
+The site follows the Code Institute Boutique Ado site style and layout. The Products and Product details pages kept the Boutique style and used similar bootstrap.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+# Existing Features
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+***
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+Product select dropdowns on the home landing page that are clear.
+Bag and user account log for easy access to other aspects of the site.
+The Logged in User can view their profile and update their account details and also leave feedback.
+The store owner has access to front end product admin and user feedback display.
 
-**So….?**
+![Home](https://bjjhubproject.s3.amazonaws.com/media/homepage.jpg)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+The Home page shows a striking backround image and contains a link to the products page.
 
-**Can I opt out?**
+![Products](https://bjjhubproject.s3.amazonaws.com/media/products.jpg)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+User can view all store products and filter via category and other metrics like price,
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+![Product Detail](https://bjjhubproject.s3.amazonaws.com/media/products_detail.jpg)
 
-**Anything more?**
+The Product Detail page shows the product image and key info like price, description and sizes. The user can add items to their basket from this page
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+![Bag Preview](https://bjjhubproject.s3.amazonaws.com/media/bag_preview.jpg)
 
----
+Once an item is added to the bag, the bag contents are shows in the top right of the screen. Like the Boutique Ado store.
 
-Happy coding!
+
+![Bag](https://bjjhubproject.s3.amazonaws.com/media/bag.jpg)
+
+The Bag shows the bag contents summary and allows for the user to Update or delete the bag contents.
+
+
+# Future Features
+***
+I would like to 
+    1. Allow users to reply to reivews.
+    2. Add a link to BJJ competition sites.
+    3. Add product ratings.
+    4. Add video content area to site.
+    5. Monthly sub to receive BBJ video tutorials
+
+# Languages Used
+***
+Python 3.0
+HTML
+CSS
+JS
+Django Frameworks
+
+
+# Frameworks, Libraries & Programmes Used
+***
+- GitHub: GitHub is used to store the project's code after being pushed from Git.
+- Django: Framework used to add structure to the platform.
+- Gitpod: was used as a CLI/Code editor.
+- Lucidchart: used to create Database schema diagram and flow chart diagram.
+- Font Awesome: Used to add icons to the Blog posts.
+- google fonts: Used for fonts throughout the site.
+- PostgresSQL
+- Markdown
+- Amazon AWS: used ot host static and media files
+
+# Testing and Code validation
+***
+
+## Automated Tests
+***
+Automated tests were carried out using Djangos testing functionality.
+The tests looked at the Python files in the App to validate the code. The Coverage repost can be found int he htmlcov folder in the app.
+![Tests](https://bjjhubproject.s3.amazonaws.com/media/checkout_coverage.jpg)
+
+Other Functionality tests  were carried out by the User:
+    -test that forms display as expected
+    -form submission reacts with Models as expected
+    - Test that unathorised user cannot edit/delete a post.
+    
+Html Tests using - https://validator.w3.org/nu/
+CSS testing - https://jigsaw.w3.org/css-validator/
+Python Testing - http://www.pep8online.com/
+
+# Credits
+***
+
+## Media
+***
+ - All Images were found on Google images. Produst images taken from Scramble Ireland store site.
+
+## Work based on other Code
+***
+[Boutique Ado](https://github.com/bobbydeane/Boutique-Ado) was the inspiration for the site. The layout, CSS, bootstrap and general functionality of BJJ Hud relied heavily on the excellent Boutique Ado created by Code Institute.
+
+[Codemy](https://www.youtube.com/channel/UCFB0dxMudkws1q8w5NJEAmw) was used as a guide to develop CRUD functionality for Blog Posts
+Stack Overflow was valuable in troubleshoiting many issues.
+
+[Bootstrap Templates](https://getbootstrap.com/docs/4.0/examples/blog/) and documentation was used for the HTML and styling of the majority of the site.
+
+[Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) was used for many of the forms on the site.
+
+[Summernote](https://github.com/summernote/django-summernote) was used to style the admin site and forms 
+
+## Acknowledgements
+***
+
+- Codemy for getting me through some tricky code implementation
+- Code Institute Slack Community for the support and time
+- Stackoverflow for the lifeline when i'm struggling
+- Code Institute tutor support for the help and patience
+
+I would also like to thank:
+- Code Institute for this opporuntity.
+- Caragh & Ban.

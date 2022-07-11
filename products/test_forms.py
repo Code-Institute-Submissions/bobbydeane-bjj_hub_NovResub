@@ -1,8 +1,8 @@
 from django.test import TestCase
 from .forms import ReviewForm
 
-    # Test if form will submit without an
-    #  names field populated (Author field is hidden)
+# Test if form will submit without an
+#  names field populated (Author field is hidden)
 
 class TestReviewForm(TestCase):
 
