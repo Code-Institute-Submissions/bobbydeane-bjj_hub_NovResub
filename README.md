@@ -2,7 +2,7 @@
 
 BJJ Hub is a e-commerce store that supplies Brazilian Jiu Jitsu apparel and goods. The site is built using the Django Framework in python and is heavily beased on Code Institute Boutique Ado project.
 
-![Site Preview](https://bjjhubproject.s3.amazonaws.com/media/homepage.jpg)
+![Site Preview](https://bjjhubproject.s3.amazonaws.com/media/RESPONSIVE.png)
 
 
 Live app link can be found [here](https://bjj-hub-project.herokuapp.com/)
