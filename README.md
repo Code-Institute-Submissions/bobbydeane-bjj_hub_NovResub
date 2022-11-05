@@ -90,6 +90,10 @@ Generated sitemap.xml and robots.txt files to improve the quality and quantity o
 
 All development and functioanlity of this project were managed using [Github](https://github.com/bobbydeane/bjj_hub/issues/26).
 
+I also used [Kanbantool](https://kanbantool.com/) to keep track of the progress of the project and for a clear understanding ot the user stories.
+
+![DER](https://bjjhubproject.s3.amazonaws.com/media/kanban.jpg)
+
 ## 3. Structure
 
 - The site has a simple layout to ensure intuitive navigation.
@@ -169,11 +173,106 @@ Django Frameworks
 ***
 
 ## Automated Tests
-***
+
 Automated tests were carried out using Djangos testing functionality.
 The tests looked at the Python files in the App to validate the code. The Coverage repost can be found int he htmlcov folder in the app.
 ![Tests](https://bjjhubproject.s3.amazonaws.com/media/checkout_coverage.jpg)
 
+## Manual Tests
+
+Manual test were carried out on the site by clicking the various buttons and links on the site to check it they give the desired outcome. See details below.
+----- 
+Homepage:
+
+Clicking on the be ready ..shop here banner will tak you to the full store. Clicking on the BJJ HIb logo will take the user back to the homepage. 
+
+![HomepageTests](https://bjjhubproject.s3.amazonaws.com/media/test_Homepage.jpg)
+
+When the user clicks the ‘all products’ button, they will get a a list of three options. These options allow the user to sort the store via Price, Category, or allow the user to view all products. 
+
+![productsTests](https://bjjhubproject.s3.amazonaws.com/media/test_allProducts.jpg)
+
+Clicking the ‘By Price’ button displays the store contents from cheapest to dearest.
+
+Clicking the ‘By category’ option will display the store and sort the items by their category. Starting with Casual wear, then Equipment, and then Fight wear. 
+
+![priceTests](https://bjjhubproject.s3.amazonaws.com/media/test_Price.jpg)
+
+
+I tested the other main nav options – Clothing and Equipment & Accessories – by clicking on the nav items to see if the desire list options appears. 
+
+![clothingTests](https://bjjhubproject.s3.amazonaws.com/media/test_clothing.jpg)
+
+----- 
+  
+  Clothing displays the two clothing categories and Equipment & Accessories brings us to the Equipment & Accessories page. 
+
+![priceTests](https://bjjhubproject.s3.amazonaws.com/media/test_Price.jpg)
+ 
+
+I tested the abilty to show an items detail by clicking on the desired item for the product details page to display.
+
+![detailTests](https://bjjhubproject.s3.amazonaws.com/media/test_productDetail.jpg)
+
+
+I also tested quantity buttons by trying to select 0 products. I was prevented doing so as the minimum option was 1 item.  
+![detailTests](https://bjjhubproject.s3.amazonaws.com/media/test_quantity.jpg)
+
+
+
+The add to bag button add the product to the bag. The correct success message appears telling me the toasts are working correctly
+
+![successTests](https://bjjhubproject.s3.amazonaws.com/media/test_bagsuccess.jpg)
+
+Clicking the go to secure checkout button brings us to the Shopping bag. 
+
+ 
+
+The update and remove item buttons work as expected.
+
+
+Signing up:
+------
+
+
+After entering user details the verification mail is sent to the user. 
+
+![mailsTests](https://bjjhubproject.s3.amazonaws.com/media/test_verifymail.jpg)
+
+The email contians a link to the the verification page 
+
+The link in the email directs me to the confirm email page. After confirming the email we are notified if successful redirected to the log in page. 
+
+![verifymailTests](https://bjjhubproject.s3.amazonaws.com/media/test_successemail.jpg)
+
+
+Reviews
+------
+When logged in the user can leave a review an item, They can also edit and delete the their reviews.
+
+Under the acounts tab the user can leave site feedback through the ‘Get in touch’ option. Clicking this brings me to the user feedback form. This form posts feedback to a page that only the admin can see. 
+
+![feedbackTests](https://bjjhubproject.s3.amazonaws.com/media/test_feedback.jpg)
+
+
+The Admin can access this via the User feedback tab.
+
+![feedbackTests](https://bjjhubproject.s3.amazonaws.com/media/test_feedbackview.jpg)
+
+Checkout
+------
+I tested the checkout by entering my details and omitted key fileds in the form. I was prevented froom proceding if these fields weren’t populated. 
+
+ ![orderTests](https://bjjhubproject.s3.amazonaws.com/media/test_stripe.jpg)
+
+The Stripe payment element also required correct data. 
+
+The correct order summary appears after placing the order and the order appears in the users order history. 
+
+
+ ![orderTests](https://bjjhubproject.s3.amazonaws.com/media/test_ordersummary.jpg)
+
+-----
 Other Functionality tests  were carried out by the User:
     -test that forms display as expected
     -form submission reacts with Models as expected
