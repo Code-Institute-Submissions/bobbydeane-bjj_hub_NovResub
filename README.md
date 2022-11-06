@@ -172,6 +172,17 @@ Django Frameworks
 # Testing and Code validation
 ***
 
+## Code validation
+
+The HTML was validated using [w3 Markup Validation Service](https://validator.w3.org/)
+
+![HTML](https://bjjhubproject.s3.amazonaws.com/media/htmlvalidation.jpg)
+
+The CSS was validated using [w3 CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+![CSS](https://bjjhubproject.s3.amazonaws.com/media/cssvalidation.jpg)
+
+
 ## Automated Tests
 
 Automated tests were carried out using Djangos testing functionality.
@@ -271,6 +282,11 @@ The correct order summary appears after placing the order and the order appears 
 
 
  ![orderTests](https://bjjhubproject.s3.amazonaws.com/media/test_ordersummary.jpg)
+ 
+ 
+ Payments are alo confirmed as successful on Stripe.
+ 
+ ![StripeTests](https://bjjhubproject.s3.amazonaws.com/media/stripe.jpg)
 
 -----
 Other Functionality tests  were carried out by the User:
@@ -282,6 +298,23 @@ Html Tests using - https://validator.w3.org/nu/
 CSS testing - https://jigsaw.w3.org/css-validator/
 Python Testing - http://www.pep8online.com/
 
+
+
+# Deployment
+***
+
+This site was deployed via the following steps:
+
+1. Create a Heroku account.
+2.Creat a new App on Heroku and give the app a new name.
+3. Select your Region (EU).
+4. Create the app, click on resources and select Postgres DB.
+5. Reveal the config vars and add SECRET_KEY, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, EMAIL_HOST_PASS, EMAIL_HOST_USER, STRIPE_PUBLIC_KEY, STRIPE_SECRET_KEY, STRIPE_WH_SECRET, DISABLE_COLLECTSTATIC = 1.
+6. Select the Buildpack section and add Python as the Buildpack.
+7. Then Select the Deploy tab at the top of the page and choose git hub aas the deployment method.
+8. Connect your Github and connect your repositry.
+9. At the bottom of the dploy page, select the Enable Automatic Deploys so that updates are automatic when you push to Github.
+
 # Credits
 ***
 
@@ -292,7 +325,7 @@ Python Testing - http://www.pep8online.com/
 ## Work based on other Code
 ***
 [Boutique Ado](https://github.com/bobbydeane/Boutique-Ado) was the inspiration for the site. The layout, CSS, bootstrap and general functionality of BJJ Hud relied heavily on the excellent Boutique Ado created by Code Institute.
-
+v
 [Codemy](https://www.youtube.com/channel/UCFB0dxMudkws1q8w5NJEAmw) was used as a guide to develop CRUD functionality for Blog Posts
 Stack Overflow was valuable in troubleshoiting many issues.
 
